@@ -26,6 +26,7 @@ img {
   padding-bottom: 55px;
   position: relative;
   overflow: hidden;
+  background-color: #fff;
 }
 .header{
   position: absolute;
@@ -149,3 +150,5 @@ text-decoration: line-through;
 .product ul li:nth-child(even){
  float: right;
 }
+
+

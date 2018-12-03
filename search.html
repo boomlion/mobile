@@ -18,35 +18,23 @@
     <!-- 要有一个主体进行包裹 -->
     <div class="header">
       <h3>乐淘云购</h3>
-      <a href="#" class=" header-left">
-        <i class=" fa fa-home"></i>
+      <a href="javascript:history.back();" class=" header-left">
+        <i class="mui-icon mui-icon-back"></i>
 
       </a>
-      <a href="#" class="header-right">
-        <i class=" fa fa-search"></i>
-
-      </a>
+     
 
     </div>
 
 
     <div class="search-main">
       <div class="search">
-        <input type="text"  placeholder="请输入搜索关键字" >
-        <button class="mui-btn mui-btn-primary">检索</button>
+        <input type="text" placeholder="请输入搜索关键字">
+        <button class="mui-btn mui-btn-primary mui-search">检索</button>
       </div>
 
-      <div class="info">
-        <div class="info-title mui-clearfix">
-          <span class="mui-pull-left">搜索历史</span>
-          <span class="mui-pull-right">
-            <i class="fa fa-trash"></i>清空记录</span>
-        </div>
-        <ul>
-          <li><a href="">我就是想试一下</a></li>
-      
-          
-        </ul>
+      <div class="info" id="local">
+
 
       </div>
     </div>
@@ -82,7 +70,39 @@
     </div>
   </div>
 
+
+  <script type="text/html" id="tmp">
+{{if obj.length===0}}
+
+<p> 没有更多的数据了 </p>
+
+{{else}}
+
+<div class="info-title mui-clearfix">
+    <span class="mui-pull-left">搜索历史</span>
+    <span class="mui-pull-right clear">
+      <i class="fa fa-trash"></i>清空记录</span>
+  </div>
+  <ul>
+    <!-- 一会动态渲染的时候添加 自己的key进去 -->
+    {{each obj v i}}
+    <li>
+      <a href="search-list.html?key={{v}}">{{v}}</a>
+      <i data-id={{i}} class="btn_delete mui-pull-right mui-icon mui-icon-closeempty "></i>
+      
+    </li>
+    {{/each}}
+
+  </ul>
+
+
+{{/if}}
+</script>
+
   <script src="./lib/mui/js/mui.js"></script>
+  <script src="./lib/zepto/zepto.min.js"></script>
+  <script src="./lib/artTemplate/template-web.js"></script>
+  <script src="./js/search.js"></script>
 </body>
 
 </html>
