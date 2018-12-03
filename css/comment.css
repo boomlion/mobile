@@ -1,0 +1,151 @@
+html,body{
+  height: 100%;
+  width: 100%;
+}
+*{
+  padding: 0;
+  margin: 0;  
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 55px;
+  position: relative;
+  overflow: hidden;
+}
+.header{
+  position: absolute;
+  top: 0;
+  left: 0;
+height: 45px;
+width: 100%;
+background-color: #006699;
+color: #fff;
+  padding-left: 45px;
+  padding-right: 45px;
+  z-index: 999;
+  
+}
+.header h3{
+ margin: 0;
+height: 45px;
+text-align: center;
+line-height: 45px;
+font-weight: 400;
+}
+.header-left,
+.header-right{
+position: absolute;
+width: 45px;
+height: 45px;
+line-height: 45px;
+font-size: 18px;
+top: 0;
+text-align: center;
+color: #fff;
+}
+.header-left{
+  left: 0;
+
+}
+.header-right{
+  right: 0;
+}
+ /* .last{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: yellow;
+
+}*/
+.last{
+  width: 100%;
+position: absolute; 
+  height: 55px;
+  bottom: 0;
+  left: 0;
+  background-color: #006699;
+  z-index: 998;
+}
+.last ul{
+  width: 100%;
+  list-style: none;
+} 
+.last li{
+  float: left;
+  width: 25%;
+padding-top: 5px;
+} 
+.last li a{
+height: 50px;
+display: block;
+text-align: center;
+color: #fff;
+
+}
+.last li p{
+color: #fff;
+  
+}
+.last li a.active{
+color: orange;
+  
+}
+.last li a.active p{
+  color: orange;
+    
+  }
+  .it_main{
+    width: 100%;
+    height: 100%;
+  position: relative;  
+  }
+.container .banner{
+  width: 100%;
+  position: relative;
+}
+
+.container .nav{
+  width: 100%;
+}
+.container .nav ul li{
+  float: left;
+  width: 33.3%;
+}
+
+
+/* 下面的产品详情 */
+.product ul li{
+  float: left;
+  width: 48%;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+ text-align: center;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+.product ul li .oldPrice{
+text-decoration: line-through;  
+}
+.product ul li .price{
+  color: red;
+}
+.product ul li:nth-child(even){
+ float: right;
+}

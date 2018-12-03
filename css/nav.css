@@ -1,0 +1,47 @@
+.it_main .aside ul li a{
+  display: block;
+  width: 90px;
+  height: 50px;
+  background-color: #E3E4E5;
+  color: #666;
+  line-height: 50px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+.it_main .aside ul li a.active{
+  border-right:none;
+  background-color: #fff;
+  
+}
+.it_main{
+  background-color: #fff;
+}
+
+.it_main .aside{
+  width: 90px;
+  float: left;
+  overflow: hidden;
+  height: 100%;
+}
+.it_main .main{
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+
+.it_main .main li{
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+.it_main .main li a{
+
+}
+.it_main .main li a img{
+  width: 70px;
+  height: 50px;
+  margin: 0 auto;
+}

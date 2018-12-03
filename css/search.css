@@ -1,0 +1,32 @@
+.search-main{
+padding: 10px;  
+}
+.search-main .search{
+  position: relative;
+}
+.search-main .search input{
+  border-radius: 5px;
+  height: 34px;
+  font-size: 12px;
+
+}
+
+.search-main .search button{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 5px 5px 0;
+}
+.search-main .info ul{
+border: 1px dashed orange;
+}
+.search-main .info ul li{
+  border-bottom: 1px dashed orange;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+}
+.search-main .info ul li:last-child{
+  border-bottom:none
+  
+}
